@@ -14,5 +14,10 @@
     -redirect Page to browse
 # Next Features
 -Form validation
+-Use Ref hook
+-Fire base production
+-Fire base setup
+-create signup in user account
+
 
 
