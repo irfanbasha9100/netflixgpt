@@ -12,5 +12,7 @@
 -Login/signUp(User)
     -Sign in /Sign Up form
     -redirect Page to browse
+# Next Features
+-Form validation
 
 
