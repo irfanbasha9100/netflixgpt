@@ -14,7 +14,7 @@
     -created redux store with userslice
     -redirect Page to browse
     -update profile api call
-    -movies from TMDB api
+    -movies fetch from TMDB api
 # Next Features
 -Form validation
 -Use Ref hook
