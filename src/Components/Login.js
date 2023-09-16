@@ -3,11 +3,11 @@ import Header from './Header';
 import { checkValideData } from '../utilis/validate';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from '../utilis/firebase'
-import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utilis/userSlice';
+
 const Login = () => {
-  const navigate = useNavigate();
+
   const dispatch = useDispatch();
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
@@ -35,20 +35,15 @@ const Login = () => {
         .then((userCredential) => {
           const user = userCredential.user;
           updateProfile(user, {
-            displayName: name.current.value, photoURL:"https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+            displayName: name.current.value, photoURL: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
           }).then(() => {
-            const { uid, email, displayName,photoURL } = auth.currentUser;
-            dispatch(addUser({uid:uid,email:email,displayName:displayName,photoURL:photoURL}))
-            // Profile updated!
-            navigate('/browse')
-            // ...
+            const { uid, email, displayName, photoURL } = auth.currentUser;
+            dispatch(addUser({ uid: uid, email: email, displayName: displayName, photoURL: photoURL }))
           }).catch((error) => {
             // An error occurred
-            setErrorMessage(error)
+            setErrorMessage(error.message)
             // ...
           });
-          console.log(user);
-          
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -63,9 +58,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in 
           const user = userCredential.user;
-          console.log(user);
-          navigate("/browse")
-          // ...
         })
         .catch((error) => {
           const errorCode = error.code;
