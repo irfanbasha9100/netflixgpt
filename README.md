@@ -11,7 +11,10 @@
      -Movie List * N
 -Login/signUp(User)
     -Sign in /Sign Up form
+    -created redux store with userslice
     -redirect Page to browse
+    -update profile api call
+    -movies from TMDB api
 # Next Features
 -Form validation
 -Use Ref hook
