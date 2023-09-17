@@ -22,5 +22,16 @@
 -Fire base setup
 -create signup in user account
 
+# Fetch
+--Custom hook for now playing videos
+-create userslice
+-Update store with movies data
+-Planning for Maincontainer $ secondary container
+-Fetch data for trailer video
+-Update store with trailer video data
+-Embedded the youtube video and make it autoplay and mute
+-Tailwind Css make main conatiner awesome
+
+
 
 
