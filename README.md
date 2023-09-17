@@ -31,6 +31,7 @@
 -Update store with trailer video data
 -Embedded the youtube video and make it autoplay and mute
 -Tailwind Css make main conatiner awesome
+-
 
 
 
