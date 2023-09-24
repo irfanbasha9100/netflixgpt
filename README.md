@@ -31,7 +31,10 @@
 -Update store with trailer video data
 -Embedded the youtube video and make it autoplay and mute
 -Tailwind Css make main conatiner awesome
--
+-GPT search feature
+-Gpt Search Bar
+-Multi Language Feature in my app
+-Integrate GPT APIS
 
 
 
