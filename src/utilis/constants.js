@@ -19,4 +19,4 @@ export const SUPP_LAN = [{
 { identifier: "hindi", name: "Hindi" }
 ]
 
-export const OPENAI_KEY = "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"
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY
