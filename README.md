@@ -35,6 +35,16 @@
 -Gpt Search Bar
 -Multi Language Feature in my app
 -Integrate GPT APIS
+--GPT search openai key
+-gpt search api call
+-Memoization
+-Fetched GPT movie suggestions from tmdb movie api
+-Created gpt slice
+-Reused movie list component to make movie recommendation container
+-Adding .env file and adding .env to ignore
+-Made our site responsive
+
+
 
 
 

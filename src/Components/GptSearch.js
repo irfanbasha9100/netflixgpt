@@ -4,14 +4,15 @@ import GptMovieSuggestions from './GptMovieSuggestions'
 import { BG_IMG } from '../utilis/constants'
 const GptSearch = () => {
   return (
-    <div>
+    <>
       <div className='fixed -z-10'>
-        <img src={BG_IMG}
-          alt='logo' />
+        <img className='w-full object-cover ' src={BG_IMG} alt='logo' />
       </div>
-      <GptSearchBar/>
-      <GptMovieSuggestions/>
-    </div>
+      <div className=''>
+        <GptSearchBar />
+        <GptMovieSuggestions />
+      </div>
+    </>
   )
 }
 
